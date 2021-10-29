@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Em Andamento</h1> <br><br>
+            <ul class="navbar">
+               <li class="active" >  <a  href="index.Html"> Home</a></li>
+                <li> <a href="historia.html">História do Rock</a> </li>
+                <li> <a href="musicas.html">Top 10 Músicas</a> </li>
+                <li> <a href="login.html">Login</a> </li>
+                <li> <a href="cadastro.html">Cadastre-se</a> </li>
+                <li> <a href="suporte.html">Suporte</a> </li>
+            </ul>
+ 
+        </div>
+    </div>
+    <div class="banner" >
+
+<button style="width: 150px; height: 30px; border-radius: 30px; background-color: orange;" onclick="sorteio() "  > <h3>Sorteie Aqui!</h3> </button>
+<div   id="div" style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;" >
+</div> 
+<audio id="guns" style="display: none;" src="guns.mp3" controls autoplay></audio>
+
+
+
+<div   id="div_a    " style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;" >
+</div> 
+<audio id="bon" style="display: none;" src="bonJovi.mp3" controls autoplay></audio>
+
+
+    </div>
+
+    <div class="footer">
+        <p>Direitos Reservados - Garagem Rock - © 2021  </p>
+    </div>
+    
+     
+    </body>
+    </html>
+    <script>
+      function sorteio(){
+          var acess = Number(Math.random()*5).toFixed()
+         if(acess == 0){
+              div.innerHTML = ` <p style="color: rgb(255, 255, 255); " > A música sorteada foi Sweet Child O' Mine, é uma música romântica que faz homenagem à primeira esposa de Axl Rose, a ex-modelo Erin Everly. Filha de Don Everly, um dos vocalistas da dupla pop The Everly Brothers, Erin é considerada a grande paixão da vida de Axl Rose. <br> <br> <img style="width: 300px;" src="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/07/9c6ca5a-3bbd31822f97b7fc9967cfe2f608e1c9.jpg" alt=""></p> `
+              div.style.display = 'block'
+          guns.style.display = 'block'
+         }
+         if(acess => 2){
+div_a.innerHTML = `<p style="color: rgb(255, 255, 255); " > A música sorteada foi Sweet Child O' Mine, é uma música romântica que faz homenagem à primeira esposa de Axl Rose, a ex-modelo Erin Everly. Filha de Don Everly, um dos vocalistas da dupla pop The Everly Brothers, Erin é considerada a grande paixão da vida de Axl Rose. <br> <br></p>`
+         div_a.style.display = 'block'
+         bon.style.display ='block'
+
+
+            div.style.display = 'none'
+          guns.style.display = 'none'
+         }
+         alert(`${acess}`)
+          }
+        
+    </script>
