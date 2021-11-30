@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garagem Rock | Cadastro</title>
+
+    
+    <script src="./assets/js/funcoes.js"></script>
+    
+    
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body style="background-color: rgb(133, 118, 118);">
+
+    <div class="header">
+        <div class="container">
+
+          <a href="index.html">  <img  src="Garagem Rock.png" alt="logo"></a>
+ 
+          
+            <ul class="navbar"> 
+                <li >  <a href="index.html">Home</a> </li>
+                <li class="active"> <a href="cadastro.html">Cadastro</a> </li>
+                <li> <a href="login.html">Login</a> </li>
+                <li> <a href="contato.html">Contato</a> </li>
+                <li class="active"><a href="contador.html">Resultados </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    
+
+    <button style="background-color: black; color: white; width: 250px;"  onclick="exibir()" >Mostrar Resultados</button>
+    
+
+    <div style="color: rgb(255, 255, 255);" id="texto" ></div>
+    
+</body>
+</html>
+
+<script>
+
+
+function exibir(){
+
+fetch("/usuarios/contador", {
+    headers: {
+        'content-type': 'application/json'
+    },
+        method: "GET",
+       
+    })
+    .then(function (resposta) {
+resposta.json()
+
+.then(function (res) {
+texto.innerHTML = res[0].contador
+})
+
+    .catch(function (erro) {
+        console.log(erro);
+      
+    });
+
+})
+
+.catch(function (erro) {
+        console.log(erro);
+})
+
+  
+
+
+
+}
+
+</script>
