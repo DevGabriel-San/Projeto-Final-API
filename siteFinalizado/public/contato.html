@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" type="imagex/png" href="https://http2.mlstatic.com/D_NQ_NP_963696-MLB31277777824_062019-O.jpg">
+</head>
+
+<body style="background-color: black;">
+
+    <div class="header">
+        <div class="container">
+
+          <a href="index.html">  <img  src="Garagem Rock.png" alt="logo"></a>
+
+            <ul class="navbar">
+                <li> <a href="index2.html">Home</a> </li>
+                <li> <a href="musica.html">Músicas</a> </li>
+                <li ><a href="historia.html">Minha História</a></li>
+                <li class="active"> <a href="contato.html">Feedback</a> </li>
+                <li > <a href="comentario.html">Adicionar Músicas</a> </li>
+                <li ><a href="contador.html">Resultados </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="banner">
+
+
+        <div class="contato">
+            <h2 style="color: black;" class="titulo">Feedback</h2>
+
+            <input id="nome" class="msg" type="text" placeholder="Nome"> <br>
+       
+            <input id="mensagem" class="mensagem" type="text" name="message" placeholder="Digite sua mensagem aqui">
+             <br> <br>
+            <div  class="botao">
+    
+                <input style="background-color: black;" type="submit" onclick="entrar()" class="submit" value="Enviar">
+
+             
+                
+            </div>
+            <div style="margin-top: 40px;">
+            <b  style="color: black;"> Mensagens Cadastradas: <span id="mens" >O</span>  </b> <br>
+            <b style="color: black;"> Última Mensagem Cadastrada:   <span id="span"  >   ...</span>  </b>
+        </div>
+        </div>
+    </div>
+
+
+<div class="footer">
+    <p>Direitos Reservados - Garagem Rock - © 2021 </p>
+
+</div>
+</body>
+
+</html>
+<script>
+
+    var ax_nome = [];
+var ax_mensagem = []
+
+function entrar(){
+
+   
+
+
+    if(nome.value == ''){
+        alert('Insira Seu Nome Por Favor!')
+    }
+
+
+
+ else   if(mensagem.value == ''){
+        alert('Insira uma Mensagem Por Favor!')
+    }
+    else{
+    ax_nome.push(nome.value);
+    ax_mensagem.push(mensagem.value);
+
+    alert(`Olá ${ax_nome[ax_nome.length -1]}, sua mensagem foi cadastrada com sucesso`)
+    mens.innerHTML = `${ax_mensagem.length}`
+    span.innerHTML = `${ax_mensagem[ax_mensagem.length - 1]}`
+}
+
+}
+
+
+</script>

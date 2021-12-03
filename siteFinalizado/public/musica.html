@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body style="background-color: rgb(0, 0, 0);">
+
+    <div class="header">
+        <div class="container">
+
+            <a href="index.html"> <img src="Garagem Rock.png" alt="logo"></a>
+
+            <ul class="navbar">
+                <li> <a href="index2.html">Home</a> </li>
+                <li class="active"> <a href="musica.html">Músicas</a> </li>
+                <li> <a href="historia.html">Minha História</a> </li>
+                <li> <a href="contato.html">Feedback</a> </li>
+                <li > <a href="comentario.html">Adicionar Músicas</a> </li>
+                <li ><a href="contador.html">Resultados </a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    </div>
+    
+    <h1 style="background-color: black; color: rgb(255, 255, 255);">Garagem Rock - Playlist</h1>
+    <div class="banner">
+
+
+        <div class="formusicas">
+            <br><br><br><br><br>
+            <button style="width: 150px; height: 30px; border-radius: 30px; background-color:rgb(0, 0, 0);"
+                onclick="sorteio() ">
+                <h3 style="color: white;"> Ouvir Rock´n Roll </h3>
+            </button> <br><br>
+
+            <button id="botao"
+                style="width: 150px;  display: none; height: 30px; border-radius: 30px; background-color: rgb(0, 0, 0) ;"
+                onclick="voltar() ">
+                <h3 style="color: white;" > Voltar </h3>
+            </button>
+
+            <div id="div"
+                style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;">
+
+            </div>
+           
+            <audio style="display: none;" id="guns" src="guns.mp3" controls></audio>
+
+
+
+            <div id="div_a"
+                style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;">
+            </div>
+            <audio id="bon" style="display: none;" src="bonJovi.mp3" controls></audio>
+
+            <div id="div_b"
+                style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;">
+            </div>
+            <audio id="pink" style="display: none;" src="pynkFloid.mp3" controls></audio>
+
+
+            <div id="div_c"
+                style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;">
+            </div>
+            <audio id="more" style="display: none;" src="more.mp3" controls></audio>
+
+
+
+            <div id="div_d"
+                style="background-color: rgb(0, 0, 0); width: 400px; border: rgb(192, 129, 11) 3px solid; display: none;">
+            </div>
+            <audio id="hotel" style="display: none;" src="hotel.mp3" controls></audio>
+
+        </div>
+
+
+        
+
+    </div>
+
+    
+
+  
+
+
+
+    <div class="footer">
+        <p>Direitos Reservados - Garagem Rock - © 2021 </p>
+    </div>
+
+
+</body>
+
+</html>
+<script>
+
+
+    function sorteio() {
+        var x = Math.ceil(Math.random() * 5)
+        if (x === 1) {
+            div.innerHTML = ` <p style="color: rgb(255, 255, 255); " > A música sorteada foi Sweet Child O' Mine de Guns N' Roses, é uma música romântica que faz homenagem à primeira esposa de Axl Rose, a ex-modelo Erin Everly. Filha de Don Everly, um dos vocalistas da dupla pop The Everly Brothers, Erin é considerada a grande paixão da vida de Axl Rose. <br> <br> <img style="width: 300px;" src="https://studiosol-a.akamaihd.net/tb/letras-blog/wp-content/uploads/2020/07/9c6ca5a-3bbd31822f97b7fc9967cfe2f608e1c9.jpg" alt=""></p> `
+            div.style.display = 'block'
+            guns.style.display = 'block'
+
+            div_a.style.display = 'none'
+            bon.style.display = 'none'
+            div_b.style.display = 'none'
+            pink.style.display = 'none'
+            div_c.style.display = 'none'
+            more.style.display = 'none'
+            div_d.style.display = 'none'
+            hotel.style.display = 'none'
+            botao.style.display = 'block'
+
+        } else if (x === 2) {
+            div_a.innerHTML = `<p style="color: rgb(255, 255, 255); " > A música sorteada foi Livin’ on a Prayer de Bon Jovi Lançada em 1986 como parte do álbum “Slippery When Wet“, a música “Livin’ on a Prayer” foi a responsável por fazer o Bon Jovi se tornar uma verdadeira potência de popularidade. Tornou-se um clássico de forma quase instantânea e segue como a canção de maior sucesso de uma banda que é especialista, justamente, em fazer hits. <br> <br> <img src="https://www.webrockradio.com/wp-content/uploads/2021/02/77488-jon-bon-jovi-thought-livin-on-a-prayer-was-just-okay.jpg" width="300px" alt=""></p>`
+            div_a.style.display = 'block'
+            bon.style.display = 'block'
+
+
+            div.style.display = 'none'
+            guns.style.display = 'none'
+            div_b.style.display = 'none'
+            pink.style.display = 'none'
+            div_c.style.display = 'none'
+            more.style.display = 'none'
+            div_d.style.display = 'none'
+            more.style.display = 'none'
+            hotel.style.display = 'none'
+            botao.style.display = 'block'
+
+        } else if (x === 3) {
+            div_b.innerHTML = ` <p style="color: rgb(255, 255, 255); " >A música sorteada foi Another Brick In The Wall de Pink Floyd,  Tem músicas que marcam gerações para sempre. Esse é o caso de Another Brick In The Wall, do quarteto Pink Floyd. A música foi lançada em 1979, no disco The Wall, e é, até hoje, um hino do rock progressivo. E não é para menos: a letra fala sobre temáticas bastante importantes, como sistema educacional, ideologia, autoritarismo e sociedade. <br> <br> <img src="https://rollingstone.uol.com.br/media/_versions/pink_floyd_divulgacao_widelg.jpg" width="300px" alt="" </p>`
+
+            div_b.style.display = 'block'
+            pink.style.display = 'block'
+
+
+
+            div_a.style.display = 'none'
+            bon.style.display = 'none'
+            div.style.display = 'none'
+            guns.style.display = 'none'
+            div_c.style.display = 'none'
+            more.style.display = 'none'
+            div_d.style.display = 'none'
+            more.style.display = 'none'
+            hotel.style.display = 'none'
+            botao.style.display = 'block'
+        } else if (x === 4) {
+            div_c.innerHTML = `<p style="color: rgb(255, 255, 255); " > A música sorteada foi Extreme - More Than Words,  A canção é um desvio do estilo funk metal que permeia os discos da banda. Como tal, muitas vezes é descrito como "uma bênção e uma maldição" devido ao seu enorme sucesso e reconhecimento mundial, mas a banda acabou adotando-o e tocando-o em todos os shows. <br> <br> <img src="https://registadeu.com.br/wp-content/uploads/2018/12/extreme.jpg" width="300px" alt="" </p>`
+
+            div_c.style.display = 'block'
+            more.style.display = 'block'
+
+
+            div_b.style.display = 'none'
+            pink.style.display = 'none'
+            div_a.style.display = 'none'
+            bon.style.display = 'none'
+            div.style.display = 'none'
+            guns.style.display = 'none'
+            div_d.style.display = 'none'
+            hotel.style.display = 'none'
+            botao.style.display = 'block'
+
+        } else if (x === 5) {
+            div_d.innerHTML = `<p style="color: rgb(255, 255, 255); " > A música sorteada foi Eagles - Hotel California, A canção relata uma história de um viajante cansado da estrada. O personagem acaba ficando preso em um hotel de luxo que, aparentemente, parecia o lugar dos sonhos. No entanto, a situação vira um verdadeiro pesadelo.
+ . <br> <br> <img src="https://www.ilikeyouroldstuff.com/sites/g/files/g2000009801/files/eagles.jpg" width="250px" alt="" </p>`
+
+            div_d.style.display = 'block'
+            hotel.style.display = 'block'
+
+
+
+            div_c.style.display = 'none'
+            div_b.style.display = 'none'
+            pink.style.display = 'none'
+            div_a.style.display = 'none'
+            bon.style.display = 'none'
+            div.style.display = 'none'
+            guns.style.display = 'none'
+            more.style.display = 'none'
+            botao.style.display = 'block'
+
+        }
+
+
+    }
+    function voltar() {
+        div_d.style.display = 'none'
+        hotel.style.display = 'none'
+        div_c.style.display = 'none'
+        div_b.style.display = 'none'
+        pink.style.display = 'none'
+        div_a.style.display = 'none'
+        bon.style.display = 'none'
+        div.style.display = 'none'
+        guns.style.display = 'none'
+        more.style.display = 'none'
+        botao.style.display = 'none'
+
+    }
+
+
+
+
+</script>

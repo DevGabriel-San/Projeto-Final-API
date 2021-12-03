@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    border: 3px solid rgb(156, 109, 21);
+    border-radius: 1px;
+}
+.container {
+    
+    width: 80%;
+    height: 100%;
+    margin: auto;
+} 
+.header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: rgb(255, 166, 0);
+}
+
+.navbar{
+    
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.banner{
+    background-image: url(https://www.sparflex.com.br/wp-content/uploads/2018/06/Aprenda-como-tocar-guitarra-com-a-posicao-certa-do-polegar-e-dos-outros-dedos.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h2{
+    color: rgb(255, 166, 0);
+    width: 390px;
+    font-weight: bolder;
+
+
+}
+.navbar li {
+    margin-right: 50px;
+    font-weight: lighter;
+    list-style-type: none;
+}
+.navbar li a {
+text-decoration: none;
+color: rgb(255, 166, 0);
+
+
+
+}
+.proposito {
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+.banner .Noticias .mvv img {
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.proposito .container .mvv div img {
+    
+    width: 300px;
+} 
+
+ .proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div h3 {
+color: #000000; 
+margin: 35px 5;
+}
+
+.proposito .container h2{
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe8e8;
+    border-radius: 30px;
+}
+
+.footer {
+    border: 3px outset rgb(255, 166, 0) ;
+    background-color: #000000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.banner_login h2{
+    color: #ebe8e8;
+    background-color: black;
+    border: 3px solid orange;
+}
+.banner_login{
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+justify-content: space-evenly;
+height: 70vh;
+
+
+width: 100%;
+background-image: url(https://www.papeldeparede.etc.br/fotos/wp-content/uploads/bandas-de-rock_5693_1280x800.jpg);
+background-size: cover;
+
+
+display: flex;
+
+
+justify-content: space-around;
+}
+
+.banner_login .formLogin {
+
+    height: 500px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.76)
+   
+}.banner_login .formLogin h2 {
+    color: #ffffff;
+   
+}
+.banner_login .formLogin div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_login .formLogin div span {
+    color: #292525;
+}
+
+.banner_login .formLogin div input {
+    border: 2px solid #030303;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(194, 156, 31);
+}
+
+.banner_login .formLogin button {
+    background-color: #000000;
+    color: rgb(255, 187, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+   text-decoration-style: none;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+-----
+
+
+
+.banner_cadastro h2{
+    color: #ebe8e8;
+    background-color: black;
+    border: 3px solid orange;
+}
+.banner_cadastro{
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+justify-content: space-evenly;
+height: 70vh;
+
+
+width: 100%;
+background-image: url(https://www.papeldeparede.etc.br/fotos/wp-content/uploads/bandas-de-rock_5693_1280x800.jpg);
+background-size: cover;
+
+
+display: flex;
+
+
+justify-content: space-around;
+}
+
+.banner_cadastro .formcadastro {
+
+    height: 700px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.76)
+   
+}.banner_cadastro .formcadastro h2 {
+    color: #ffffff;
+    background-color: black;
+    border: 3px solid orange;
+   
+}
+.banner_cadastro.formcadastro div {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_cadastro .formcadastro div span {
+    color: #292525;
+}
+
+.banner_cadastro .formcadastro div input {
+    border: 2px solid #030303;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(194, 156, 31);
+}
+
+.banner_cadastro .formcadastro button {
+    background-color: #000000;
+    color: rgb(255, 187, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+   text-decoration-style: none;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner-login {
+ background-color: #000000;
+    height: 550px;
+    /* border: 3px solid yellow; */
+    background-image: url(https://www.papeldeparede.etc.br/fotos/wp-content/uploads/bandas-de-rock_5693_1280x800.jpg);
+    background-size: cover;
+}
+
+.banner-login .container {
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-login h2{
+    margin-bottom: 60px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 166, 0);
+}
+
+.banner-login .card {
+    background-color: #ffffffbe;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 35px;
+}
+.banner-login .card h2{
+    margin-bottom: 5px;
+
+    border-radius: 10px;
+
+    
+}
+
+
+.banner-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner-login #div_erros_login {
+    margin-top: 15px;
+}
+
+button {
+    cursor:pointer ;
+}
+
+/* FORMULARIO */
+
+input {
+    height: 30px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.botao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: rgb(255, 166, 0);
+    background-color: #000000;
+    width: 150px;
+    align-self: center;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.loading-div {
+    width: 100px;
+    
+    margin: auto;
+    display: none;
+}
+
+.loading-div img {
+    height: 90px;
+    width: 90px;
+}
+

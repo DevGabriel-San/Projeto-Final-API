@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header
+{
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+  
+}
+
+.header img{
+    margin-bottom: 60px;
+
+}
+.container
+{
+    
+    margin: auto;
+    height: 100%;
+    width: 95%;
+    padding: 30px 0;
+    display: flex;
+   
+
+    align-items: center;
+    
+
+}
+
+
+.header .container{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20rem;
+}
+
+.navbar 
+{
+ display: flex;
+ list-style: none;
+
+ width: 50%;  
+ justify-content: space-between;
+ margin: 0 20px;
+
+
+ 
+  
+ 
+}
+
+
+
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+
+
+.header .container  img{
+    width: 150px;
+}
+
+
+
+.header ul
+{
+    color: #ffffff;
+}
+
+.active
+{
+    font-weight: bolder;
+    background-color:rgb(112, 104, 112) ;
+    border-radius: 25px;
+    
+    
+}
+
+.banner
+{
+    
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+   
+    
+    width: 100%;
+    background-image: url(https://www.sparflex.com.br/wp-content/uploads/2018/06/Aprenda-como-tocar-guitarra-com-a-posicao-certa-do-polegar-e-dos-outros-dedos.jpg);
+    background-size: cover;
+   
+   
+    display: flex;
+    
+    
+    justify-content: space-around;
+}
+
+.banner .message{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 60%;
+    opacity: 0.9;
+    border-radius: 15px;
+    padding: 30px;
+  
+}
+
+ .banner .message p
+{
+    margin-bottom: 80px;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 400;
+  
+    
+}
+
+.banner .message p span{
+    font-weight: 700;
+}
+
+
+.bloco{
+    margin-top: 80px;
+    height: 40vh;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.bloco:last-child{
+    margin-left: 50px;
+}
+
+.bloco div{
+    
+    width: 50%;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-weight: 300;
+  
+   
+}
+
+.bloco div h3{
+    margin-top: 30px;
+    color: #66271F;
+    margin-bottom: 50px;
+  
+}
+
+.bloco div p a{
+        text-decoration: none;
+        color: #66271F;
+        font-weight: bold;
+}
+
+.purpose
+{
+    margin-top: 50px;
+    height: 450px;
+    background-color: transparent;
+    
+}
+
+.purpose .container .mvv div img
+{
+    height: 100px;
+    width: 100px;
+    
+} 
+
+
+
+.purpose .container .mvv
+{
+
+   
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.purpose .container
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.purpose .container .mvv div{
+    
+    margin-bottom: 20px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.purpose .container h2
+{
+    
+    background-color: #ffff;
+    color: #66271F;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.purpose .container .mvv div h3
+{
+    color: #66271F;
+    font-weight: bolder;
+    margin: 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.banner .titulo {
+    
+    font-weight: bolder;
+    font-size: 30px;  
+    color: #66271F;
+}
+
+.banner #calc div h3{
+   color: #000;
+   font-size: 15px;
+   font-weight: 500;
+   margin-bottom: 10px;
+   
+}
+
+.banner .botoes {
+    
+    display: flex;
+    
+    align-items: center;
+    width: 450px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+ 
+    
+}
+
+.banner .botoes button
+{
+    background: #66271F;
+    color: #fff;
+    
+    
+    margin-left: 30px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.banner .botoes button:hover{
+    opacity: 0.9;
+    
+  
+}
+
+
+
+
+
+
+
+
+.banner  h1{
+    margin-top: 70px;
+   margin-bottom: 20px;
+   color: #66271F;
+   font-weight: bolder;
+   margin-bottom: 30px;
+   font-size: 40px;
+   
+}
+
+.tituloCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #66271F;
+    margin-top: 50px;
+}
+
+
+
+
+.formusicas{
+    
+     margin-top: 30px; 
+    padding: 50px;
+    border-radius: 30px;
+   
+    height: 30vh;
+    width: 80%;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    color: #66271F;
+  
+   
+}
+
+
+
+.botaoCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botaoCadastro button{      
+    cursor: pointer;
+    background-color: #000000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    height: 60px;
+    width: 150px;
+}
+
+.botaoCadastro  button:hover{
+        opacity: 0.8;
+}
+
+
+ 
+.banner .formLogin{
+    margin-top: 30px ;
+    margin-bottom: 150px;
+    background: #fff;
+    height: 45%;
+    width: 15%;
+    padding: 50px;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-weight: 500;
+    color:#000000;
+    height: 75vh;
+    width: 15vw;
+}
+
+.banner .formLogin input{
+    height: 18px;
+    padding: 8px;
+    border-radius: 15px;
+
+}
+
+
+.banner .formLogin button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #66271F ;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px; 
+}
+
+.banner .formLogin button:hover{
+    opacity: 0.8;
+}
+
+.banner .formLogin button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.banner .formLogin p a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #66271F;
+
+}
+
+
+
+
+.proposito {
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+.banner .Noticias .mvv img {
+    width: 300px;
+    border-radius: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.proposito .container .mvv div img {
+    
+    width: 300px;
+} 
+
+ .proposito .container .mvv {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.proposito .container .mvv div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proposito .container .mvv div h3 {
+color: #000000; 
+margin: 35px 5;
+}
+
+.proposito .container h2{
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebe8e8;
+    border-radius: 30px;
+}
+
+
+
+
+.footer
+{
+    
+    width: 100%;
+    background-color:rgb(179, 147, 109);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.footer_ind
+{
+    margin-top: 65px;
+    width: 100%;
+    background-color:rgb(179, 147, 109);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.footer p
+{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 12px;
+}
+.footer_ind p
+{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 12px;
+}
+
+
+.banner .contato {
+    background-color: #fff;
+    
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    background: #fff;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
+    height: 50%;
+    width: 28%;
+    padding: 40px;
+    
+    border-radius: 20px;
+
+    font-weight: 500;
+    color:#66271F;
+    
+
+}
+
+.banner .contato .titulo h2{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.banner .contato .mensagem{
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    
+    
+}
+
+.banner .contato .msg{
+    width: 100%;
+    margin-top: 5px;
+
+    
+    
+}
+ 
+.banner .contato .botao{
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    color: #000000;
+    
+    
+}
+
+.banner .contato .botao:hover{
+    opacity: 0.8;
+}
+
+.submit{
+   
+    cursor: pointer;
+    background-color: #66271F;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px; 
+    align-items: center;
+}
+
+.loading-div {
+    width: 50px;
+    /* border: 3px solid pink; */
+    margin: auto;
+    display: none;
+}
+
+.loading-div img {
+    height: 50px;
+    width: 50px;
+}
+
+.historia_background {
+    background-color: #000000;
+height: 500px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}

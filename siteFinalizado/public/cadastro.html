@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Garagem Rock | Cadastro</title>
+
+    
+    <script src="./assets/js/funcoes.js"></script>
+    
+    
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body style="background-color: black;">
+
+    <div class="header">
+        <div class="container">
+
+          <a href="index.html">  <img  src="Garagem Rock.png" alt="logo"></a>
+ 
+          
+            <ul class="navbar"> 
+                <li >  <a href="index.html">Home</a> </li>
+                <li class="active"> <a href="cadastro.html">Cadastro</a> </li>
+                <li> <a href="login.html">Login</a> </li>      
+               
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="banner">
+        <div style="margin-bottom: 40px;" class="formLogin">
+            
+                <h2>Garagem Rock</h2>
+        <div class="formulario">
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                     <b>Nome:</b>   
+                        <input name="nome" type="text" placeholder="Nome">
+                        <br> <br>
+                      <b>Email: </b>  
+                        <input name="email" type="text" placeholder="usuario@gmail.com">
+                        <br> <br>
+                        <b>Cidade: </b>  
+                        <input name="cidade" type="text" placeholder="xxxx">
+                        <br> <br>
+                        <b>Estado: </b>  
+                        <input name="estado" type="text" placeholder="XX">
+                        <br> <br>
+                        <b>Senha:</b>
+                        <input name="senha" type="password" placeholder="******">
+                        <br> <br>
+                        <b>Confirmação da Senha:</b>
+                        <input name="confirmacao-senha" type="password" placeholder="******">
+                        <br> <br>
+                        <button style="background-color: black;" >  Cadastrar</button>
+                    </form>
+                </div>
+                <div id="div_aguardar" class="loading-div">
+                    <img src="./assets/aguarde-pink3.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer inicio-->
+    <div  class="footer">
+      
+         
+            
+        <p>Direitos Reservados - Garagem Rock - © 2021 </p>
+    
+    </div>
+    <!--footer fim-->
+    
+
+</body>
+
+</html>
+
+<script>
+
+    function limparFormulario() {
+        document.getElementById("form_cadastro").reset();
+    }
+
+    function cadastrar() {
+        aguardar();
+
+        var formulario = new URLSearchParams(new FormData(document.getElementById("form_cadastro")));
+
+        var nome = formulario.get("nome");
+        var email = formulario.get("email");
+        var cidade = formulario.get("cidade");
+        var estado = formulario.get("estado")
+        var senha = formulario.get("senha");
+    
+        var confirmacaoSenha = formulario.get("confirmacao-senha");
+
+        // TODO: VERIFICAR AS VALIDAÇÕES QUE ELES ESTÃO APRENDENDO EM ALGORITMOS 
+        if (nome == "" || email == "" || senha == "" || confirmacaoSenha == "") {
+            
+            window.alert("Preencha todos os campos para prosseguir!");
+            if (nome == "")  {
+                console.log('nome está em branco')
+            }
+            if (email == "" )  {
+                console.log('email está em branco')
+            }
+            if (senha == "" )  {
+                console.log('senha está em branco')
+            }
+            if (confirmacaoSenha == "" )  {
+                console.log('confirmacaoSenha está em branco')
+            }
+            finalizarAguardar();
+            return false;
+        }
+        
+        if (email.indexOf("@") == -1 || email.indexOf(".com") == -1) {
+            window.alert("Ops, e-mail inválido! Verifique e tente novamente.");
+            finalizarAguardar();
+            return false;
+        }
+        
+        if (senha != confirmacaoSenha) {
+            window.alert("As senhas inseridas devem ser iguais para prosseguir!");
+            finalizarAguardar();
+            return false;
+        }
+
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                window.alert("Cadastro realizado com sucesso!");
+                window.location = "login.html";
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+
+</script>
